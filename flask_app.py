@@ -25,7 +25,9 @@ GPIO.setup(26,GPIO.OUT)
 
 
 rfid_dict = {'E235FC8B\r\n': 'A1', 'C0B4FD79\r\n': 'A4', '340B53B9\r\n': 'A3', '7DC476A9\r\n': 'A2'}
-active_beds = ('A1','A2','A3','A4','A5','A6')                                        #fetch from main server
+active_beds = ('A1','A2','A3','A4','A5','A6','A7','A8','A9','A10')                                        #fetch from main server
+
+#details are obtained from main server by requests using api
 left_beds = ('A1','A3')
 
 #ser=serial.Serial("/dev/ttyACM0",9600)  #change ACM number as found from ls /dev/tty/ACM*
